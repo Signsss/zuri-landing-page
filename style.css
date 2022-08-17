@@ -1,13 +1,10 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-
 .wrapper{
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
-
 a{
     color: red;
     text-decoration: none;
@@ -20,13 +17,15 @@ a{
     font-weight: bold;
     margin: 20% 0;
 }
-
+ 
 .txt-lg{
+    color: rgba(0, 0, 0, 0.651);
     font-size: 30px;
     text-align: center;
     margin: 10% 0;
 }
 .txt-sm{
+    color: rgba(0, 0, 0, 0.671);
     font-size: 15px;
     margin: 5% 0;
 }
@@ -37,7 +36,6 @@ button{
     border-color:  red;
     margin: 5% auto;
 }
-
 .red-bg{
     background-color: red;
 }
@@ -45,7 +43,7 @@ button{
     color: white;
 }
 
-.red-bg a:hover{
+.red-bg button:hover{
     background-color: white;
     color: red;
 }
@@ -69,3 +67,20 @@ button{
     margin: 2% 0;
 }
 
+@media (min-width: 760px) {
+    .wrapper{
+        width: 60%;
+        margin: auto;
+    }
+
+    .btn{
+        display: flex;
+    }
+    .section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .margin{
+        margin:2%;
+    }
+}
